@@ -1,0 +1,25 @@
+.bg_white{
+    background-color: white;
+}
+
+.bg_dark{
+    background-color: #13283F;
+}
+
+.vh_height{
+    height: 100vh;
+}
+
+.text_decoration_none{
+    text-decoration: none;
+}
+
+.hover_a:hover{
+    background-color: rgba(255, 255, 255, 0.506);
+    border-radius: 10px;
+}
+
+.nav-height{
+    max-height: 3.5em;
+    align-items: center;
+}
