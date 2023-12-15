@@ -7,7 +7,9 @@
 }
 
 .vh_height{
-    height: 100vh;
+    height: calc(100vh - 3.5em);
+    position: relative;
+    top: 3.5em;
 }
 
 .text_decoration_none{
@@ -20,6 +22,13 @@
 }
 
 .nav-height{
-    max-height: 3.5em;
+    height: 3em;
     align-items: center;
 }
+
+header{
+    height: 3.5em;
+}
+
+
+
