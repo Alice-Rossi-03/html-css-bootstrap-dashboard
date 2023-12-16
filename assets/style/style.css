@@ -3,6 +3,10 @@
 }
 
 .bg_dark{
+    background-image: url(../img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: #13283F;
 }
 
@@ -30,5 +34,8 @@ header{
     height: 3.5em;
 }
 
+.bg_blue{
+    background-color: #1C71E8;
+}
 
 
