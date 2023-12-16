@@ -38,4 +38,8 @@ header{
     background-color: #1C71E8;
 }
 
+.w_fit{
+    width: fit-content;
+}
+
 
