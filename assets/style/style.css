@@ -49,3 +49,16 @@ header{
 .hr_bg{
     background-color: #E3E3E3;
 }
+
+.w_100{
+    width: 100%;
+}
+
+@media screen and (max-width: 992px){
+    .v_md_50{
+        width: 75%;
+    }
+
+    
+}
+
