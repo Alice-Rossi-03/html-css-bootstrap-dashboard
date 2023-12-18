@@ -38,7 +38,7 @@
                                 <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
                             </svg>
                         </span>
-                        <input class="form-control me-2 border-0 bg-body-tertiary" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2 border-0 bg-body-tertiary" type="search" placeholder="Prova a cercare: Lezioni Di Laravel.." aria-label="Search">
                     </form> 
 
                 </div>
@@ -154,11 +154,11 @@
 
                         <!-- new student -->
 
-                        <div class="text-light d-flex gap-1 align-items-start order-md-last">
+                        <div class="text-light d-flex gap-1 align-items-start order-md-first">
                             
                             <span class="d-inline">Nuovo Studente</span>
 
-                            <!-- offcanvas -->
+                            <!-- offcanvas md & lg -->
                             
                             <div class="border-0 bg-transparent">
 
@@ -168,7 +168,7 @@
                                     </svg>
                                 </button>
 
-                                <div class="offcanvas offcanvas-end w_100 v_md_50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div class="offcanvas-header">
                                         <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci Un Nuovo Studente</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -177,49 +177,67 @@
 
                                         <form action="#" method="post">
                                             <div>
-                                                <div class="row">
-                                                    <span class="col-6">First-name</span>
-                                                    <span class="col-6 p-0"> Last-name</span>
-                                                </div>
-                                                <div class="d-flex gap-1">
-    
-                                                    <input type="text" class="form-control">
-                                                
-                                                    <input type="text" class="form-control">
+                                               
+                                                <div class="d-flex flex-column flex-md-row gap-2">
+                                                    
+                                                    <div class="w-100 w-md-50">
+                                                        <label for="fname" class="form-label">First Name</label>
+                                                        <input type="text" class="form-control" id="fname">
+                                                    </div>
+                                                   
+                                                    <div class="w-100 w-md-50">
+                                                        <label for="lname" class="form-label">Last Name</label>
+                                                        <input type="text" class="form-control" id="lname">
+                                                    </div>
+                                                   
     
                                                 </div>
                                             </div>
 
                                             <div class="py-4">
-                                                <div class="row">
-                                                    <span class="col-6">Email</span>
-                                                    <span class="col-6 p-0">Password</span>
-                                                </div>
-                                                <div class="d-flex gap-1">
-    
-                                                    <div class="input-group flex-nowrap">
-                                                        <span class=" input-group-text" id="addon-wrapping">@</span>
-                                                        <input type="email" class="form-control" aria-label="email" aria-describedby="addon-wrapping">
-                                                    </div>
                                                 
-                                                    <input type="password" class="col-6 rounded" style="border: 1px solid #dee2e6;;">
+                                                
+                                                <div class="d-flex flex-column flex-md-row gap-2">
+    
+                                                    <div class="w-100 w-md-50">
+
+                                                        <label for="email" class="form-label">Email</label>
+                                                        <div class="input-group flex-nowrap">
+                                                            <span class=" input-group-text" id="addon-wrapping email">@</span>
+                                                            <input type="email" class="form-control" aria-label="email" aria-describedby="addon-wrapping">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                
+                                                    <div class="w-100 w-md-50">
+                                                        <label for="password" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="password">
+                                                    </div>
+                                                    
     
                                                 </div>
                                             </div>
 
-                                            <div>
-                                                <div class="row w-100">
-                                                    <span class="col-6">Email Address</span>
-                                                    <span class="col-6">Password</span>
-                                                </div>
-                                                <div class="d-flex gap-1">
-    
-                                                    <div class="input-group flex-nowrap">
-                                                        <span class="input-group-text" id="addon-wrapping">@</span>
-                                                        <input type="email" class="form-control" aria-label="email" aria-describedby="addon-wrapping">
-                                                    </div>
+                                            <div class="py-lg-0">
                                                 
-                                                    <input type="password" class="col-6 rounded" style="border: 1px solid #dee2e6;;">
+                                                
+                                                <div class="d-flex flex-column flex-md-row gap-2">
+    
+                                                    <div class="w-100 w-md-50">
+
+                                                        <label for="email" class="form-label">Email Address</label>
+                                                        <div class="input-group flex-nowrap">
+                                                            <span class=" input-group-text" id="addon-wrapping email">@</span>
+                                                            <input type="email" class="form-control" aria-label="email" aria-describedby="addon-wrapping">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                
+                                                    <div class="w-100 w-md-50">
+                                                        <label for="password" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="password">
+                                                    </div>
+                                                    
     
                                                 </div>
                                             </div>
@@ -238,44 +256,49 @@
                                             </div>
                                             
                                             <div>
-                                                <div class="row">
-                                                    <span class="col-6">Città</span>
-                                                    <span class="col-3 p-0">Stato</span>
-                                                    <span class="col-3 p-0">CAP</span>
-                                                </div>
-                                                <div class="d-flex gap-1">
+                                                
+                                                <div class="d-flex flex-column flex-md-row gap-2">
     
-                                                    <input type="text" class="form-control w-50">
+                                                    <div class="w-100 w-md-50">
+                                                        <label for="city" class="form-label">Città</label>
+                                                        <input type="text" class="form-control" id="city">
+                                                    </div>
 
-                                                    <div class="input-group w-25">
-                                                        <select class="form-select" id="inputGroupSelect02">
-                                                          <option selected>Choose...</option>
-                                                          <option value="1">One</option>
-                                                          <option value="2">Two</option>
-                                                          <option value="3">Three</option>
-                                                        </select>
-                                                      </div>
+                                                    <div class="w-100 w-md-25">
+                                                        <label for="country" class="form-label">Stato</label>
+                                                        <div class="input-group">
+                                                            <select class="form-select" id="inputGroupSelect02 country">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
 
-                                                    <input type="text" class="form-control w-25">
+                                                    
+                                                    <div class="w-100 w-md-25">
+                                                        <label for="cap" class="form-label">CAP</label>
+                                                        <input type="text" class="form-control" id="cap">
+                                                    </div>
     
                                                 </div>
                                             </div>
 
                                             <div class="py-4">
-                                                <div class="row">
-                                                    <span class="col-12">Foto</span>
-                                                </div>
-                                                <div>
+                                                
+                                                <div class="mb-3">
 
-                                                    <div class="input-group mb-3">
+                                                    <label for="photo" class="form-label">Foto</label>
+                                                    <div class="input-group">
                                                         <label class="input-group-text" for="inputGroupSelect01">Choose File</label>
-                                                        <select class="form-select" id="inputGroupSelect01">
+                                                        <select class="form-select" id="inputGroupSelect01 photo">
                                                           <option selected>No File Selected</option>
                                                           <option value="1">One</option>
                                                           <option value="2">Two</option>
                                                           <option value="3">Three</option>
                                                         </select>
-                                                      </div>
+                                                    </div>
   
                                                 </div>
                                                 
@@ -288,7 +311,7 @@
                                                     <label class="form-check-label" for="flexCheckChecked">
                                                       Seleziona Per Andare Avanti
                                                     </label>
-                                                  </div>
+                                                </div>
                                             </div>
 
                                             <div>
@@ -310,7 +333,7 @@
 
                         <!-- boolean app -->
 
-                        <div class="text-light d-flex flex-column gap-1 w-lg-75 order-md-first">
+                        <div class="text-light d-flex flex-column gap-1 w-lg-75 order-md-last">
                             <div>
                                 <h3 class="d-inline-block">Boolean</h3>
                                 <span class="text-capitalize px-2 bg-black bg-opacity-25 rounded-pill py-1">Piano blaze</span>
@@ -358,13 +381,13 @@
                                         <hr class="m-0" style="background-color: #E3E3E3;">
                                     </div>
                                     
-                                    <div class="p-3">
-                                        <table class="table table-hover">
+                                    <div class="p-3 table-responsive">
+                                        <table class="table table-hover align-middle">
                                             <thead>
                                               <tr>
                                                 <th scope="col">Nome</th>
-                                                <th scope="col">Data Inizio</th>
-                                                <th scope="col">ROI</th>
+                                                <th scope="col" class="d-none d-md-table-cell">Data Inizio</th>
+                                                <th scope="col" class="d-none d-md-table-cell">ROI</th>
                                                 <th scope="col">Stato</th>
                                                 <th scope="col">Azioni</th> 
                                               </tr>
@@ -372,26 +395,33 @@
                                             <tbody>
 
                                                 <tr>
-                                                    <td class="d-flex align-items-center gap-2 h-100 height_55" style="min-height: 55px;">
-                                                        <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                    
+                                                    <td>
+                                                        <figure class="d-inline-block mb-0">
+                                                            <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                        </figure>
                                                         <span>Classe 75</span>
                                                     </td>
-                                                    <td class="height_55">15 Feb 2021</td>
-                                                    <td class="height_55">20%</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    
                                                     <td class="height_55">
                                                         <div class="rounded-pill bg-success p-1 text-center text-light" style="font-size: 0.7em;">
                                                         Done
                                                         </div>
                                                     </td>
-                                                    <td class="height_55">
-                                                        <div class="d-flex gap-1 align-content-center h-100">
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+
+                                                    <td>
+                                                        <div class="d-flex gap-1 align-content-center">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
                                                                 </svg>
                                                             </div>
 
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
                                                                 </svg>
@@ -405,26 +435,33 @@
                                                 </tr>
 
                                                 <tr>
-                                                    <td class="d-flex align-items-center gap-2 h-100 height_55" style="min-height: 55px;">
-                                                        <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                    
+                                                    <td>
+                                                        <figure class="d-inline-block mb-0">
+                                                            <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                        </figure>
                                                         <span>Classe 75</span>
                                                     </td>
-                                                    <td class="height_55">15 Feb 2021</td>
-                                                    <td class="height_55">20%</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    
                                                     <td class="height_55">
                                                         <div class="rounded-pill bg-success p-1 text-center text-light" style="font-size: 0.7em;">
                                                         Done
                                                         </div>
                                                     </td>
-                                                    <td class="height_55">
-                                                        <div class="d-flex gap-1 align-content-center h-100">
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+
+                                                    <td>
+                                                        <div class="d-flex gap-1 align-content-center">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
                                                                 </svg>
                                                             </div>
 
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
                                                                 </svg>
@@ -438,26 +475,33 @@
                                                 </tr>
 
                                                 <tr>
-                                                    <td class="d-flex align-items-center gap-2 h-100 height_55" style="min-height: 55px;">
-                                                        <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                    
+                                                    <td>
+                                                        <figure class="d-inline-block mb-0">
+                                                            <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                        </figure>
                                                         <span>Classe 75</span>
                                                     </td>
-                                                    <td class="height_55">15 Feb 2021</td>
-                                                    <td class="height_55">20%</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    
                                                     <td class="height_55">
                                                         <div class="rounded-pill bg-warning p-1 text-center text-light" style="font-size: 0.7em;">
                                                         Process
                                                         </div>
                                                     </td>
-                                                    <td class="height_55">
-                                                        <div class="d-flex gap-1 align-content-center h-100">
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+
+                                                    <td>
+                                                        <div class="d-flex gap-1 align-content-center">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
                                                                 </svg>
                                                             </div>
 
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
                                                                 </svg>
@@ -471,26 +515,33 @@
                                                 </tr>
 
                                                 <tr>
-                                                    <td class="d-flex align-items-center gap-2 h-100 height_55" style="min-height: 55px;">
-                                                        <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                    
+                                                    <td>
+                                                        <figure class="d-inline-block mb-0">
+                                                            <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                        </figure>
                                                         <span>Classe 75</span>
                                                     </td>
-                                                    <td class="height_55">15 Feb 2021</td>
-                                                    <td class="height_55">20%</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    
                                                     <td class="height_55">
                                                         <div class="rounded-pill bg-danger p-1 text-center text-light" style="font-size: 0.7em;">
                                                         Failed
                                                         </div>
                                                     </td>
-                                                    <td class="height_55">
-                                                        <div class="d-flex gap-1 align-content-center h-100">
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+
+                                                    <td>
+                                                        <div class="d-flex gap-1 align-content-center">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
                                                                 </svg>
                                                             </div>
 
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
                                                                 </svg>
@@ -504,26 +555,33 @@
                                                 </tr>
 
                                                 <tr>
-                                                    <td class="d-flex align-items-center gap-2 h-100 height_55" style="min-height: 55px;">
-                                                        <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                    
+                                                    <td>
+                                                        <figure class="d-inline-block mb-0">
+                                                            <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                        </figure>
                                                         <span>Classe 75</span>
                                                     </td>
-                                                    <td class="height_55">15 Feb 2021</td>
-                                                    <td class="height_55">20%</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    
                                                     <td class="height_55">
                                                         <div class="rounded-pill bg-success p-1 text-center text-light" style="font-size: 0.7em;">
                                                         Done
                                                         </div>
                                                     </td>
-                                                    <td class="height_55">
-                                                        <div class="d-flex gap-1 align-content-center h-100">
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+
+                                                    <td>
+                                                        <div class="d-flex gap-1 align-content-center">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
                                                                 </svg>
                                                             </div>
 
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
                                                                 </svg>
@@ -537,26 +595,33 @@
                                                 </tr>
 
                                                 <tr>
-                                                    <td class="d-flex align-items-center gap-2 h-100 height_55" style="min-height: 55px;">
-                                                        <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                    
+                                                    <td>
+                                                        <figure class="d-inline-block mb-0">
+                                                            <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                        </figure>
                                                         <span>Classe 75</span>
                                                     </td>
-                                                    <td class="height_55">15 Feb 2021</td>
-                                                    <td class="height_55">20%</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    
                                                     <td class="height_55">
                                                         <div class="rounded-pill bg-warning p-1 text-center text-light" style="font-size: 0.7em;">
                                                         Process
                                                         </div>
                                                     </td>
-                                                    <td class="height_55">
-                                                        <div class="d-flex gap-1 align-content-center h-100">
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+
+                                                    <td>
+                                                        <div class="d-flex gap-1 align-content-center">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
                                                                 </svg>
                                                             </div>
 
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
                                                                 </svg>
@@ -570,26 +635,33 @@
                                                 </tr>
 
                                                 <tr>
-                                                    <td class="d-flex align-items-center gap-2 h-100 height_55" style="min-height: 55px;">
-                                                        <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                    
+                                                    <td>
+                                                        <figure class="d-inline-block mb-0">
+                                                            <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                        </figure>
                                                         <span>Classe 75</span>
                                                     </td>
-                                                    <td class="height_55">15 Feb 2021</td>
-                                                    <td class="height_55">20%</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    
                                                     <td class="height_55">
                                                         <div class="rounded-pill bg-success p-1 text-center text-light" style="font-size: 0.7em;">
                                                         Done
                                                         </div>
                                                     </td>
-                                                    <td class="height_55">
-                                                        <div class="d-flex gap-1 align-content-center h-100">
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+
+                                                    <td>
+                                                        <div class="d-flex gap-1 align-content-center">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
                                                                 </svg>
                                                             </div>
 
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
                                                                 </svg>
@@ -603,59 +675,33 @@
                                                 </tr>
 
                                                 <tr>
-                                                    <td class="d-flex align-items-center gap-2 h-100 height_55" style="min-height: 55px;">
-                                                        <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                    
+                                                    <td>
+                                                        <figure class="d-inline-block mb-0">
+                                                            <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                        </figure>
                                                         <span>Classe 75</span>
-                                                    </td>
-                                                    <td class="height_55">15 Feb 2021</td>
-                                                    <td class="height_55">20%</td>
-                                                    <td class="height_55">
-                                                        <div class="rounded-pill bg-warning p-1 text-center text-light" style="font-size: 0.7em;">
-                                                        Process
-                                                        </div>
-                                                    </td>
-                                                    <td class="height_55">
-                                                        <div class="d-flex gap-1 align-content-center h-100">
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="position: relative; top: -2px" fill="#999999">
-                                                                    <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
-                                                                </svg>
-                                                            </div>
-
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" style="position: relative; top: -2px" fill="#999999">
-                                                                    <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
-                                                                </svg>
-                                                        
-                                                            </div>
-                                                            
-                                                        </div>
-                                                        
                                                     </td>
                                                     
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="d-flex align-items-center gap-2 h-100 height_55" style="min-height: 55px;">
-                                                        <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
-                                                        <span>Classe 75</span>
-                                                    </td>
-                                                    <td class="height_55">15 Feb 2021</td>
-                                                    <td class="height_55">20%</td>
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    
                                                     <td class="height_55">
                                                         <div class="rounded-pill bg-success p-1 text-center text-light" style="font-size: 0.7em;">
                                                         Done
                                                         </div>
                                                     </td>
-                                                    <td class="height_55">
-                                                        <div class="d-flex gap-1 align-content-center h-100">
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+
+                                                    <td>
+                                                        <div class="d-flex gap-1 align-content-center">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
                                                                 </svg>
                                                             </div>
 
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
                                                                 </svg>
@@ -669,26 +715,33 @@
                                                 </tr>
 
                                                 <tr>
-                                                    <td class="d-flex align-items-center gap-2 h-100 height_55" style="min-height: 55px;">
-                                                        <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                    
+                                                    <td>
+                                                        <figure class="d-inline-block mb-0">
+                                                            <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                        </figure>
                                                         <span>Classe 75</span>
                                                     </td>
-                                                    <td class="height_55">15 Feb 2021</td>
-                                                    <td class="height_55">20%</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    
                                                     <td class="height_55">
                                                         <div class="rounded-pill bg-danger p-1 text-center text-light" style="font-size: 0.7em;">
-                                                        Failed 
+                                                        Failed
                                                         </div>
                                                     </td>
-                                                    <td class="height_55">
-                                                        <div class="d-flex gap-1 align-content-center h-100">
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+
+                                                    <td>
+                                                        <div class="d-flex gap-1 align-content-center">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
                                                                 </svg>
                                                             </div>
 
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
                                                                 </svg>
@@ -702,26 +755,33 @@
                                                 </tr>
 
                                                 <tr>
-                                                    <td class="d-flex align-items-center gap-2 h-100 height_55" style="min-height: 55px;">
-                                                        <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                    
+                                                    <td>
+                                                        <figure class="d-inline-block mb-0">
+                                                            <img src="./assets/img/class-avatar.jpg" alt="avatar" class="img-fluid" style="height: 25px; width: 25px;">
+                                                        </figure>
                                                         <span>Classe 75</span>
                                                     </td>
-                                                    <td class="height_55">15 Feb 2021</td>
-                                                    <td class="height_55">20%</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                    
+                                                    <td class="d-none d-md-table-cell">20%</td>
+                                                    
                                                     <td class="height_55">
                                                         <div class="rounded-pill bg-success p-1 text-center text-light" style="font-size: 0.7em;">
                                                         Done
                                                         </div>
                                                     </td>
-                                                    <td class="height_55">
-                                                        <div class="d-flex gap-1 align-content-center h-100">
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+
+                                                    <td>
+                                                        <div class="d-flex gap-1 align-content-center">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
                                                                 </svg>
                                                             </div>
 
-                                                            <div class="btn btn-outline-secondary ratio-1x1" style="max-height: 38px;">
+                                                            <div class="btn btn-outline-secondary ratio-1x1">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" style="position: relative; top: -2px" fill="#999999">
                                                                     <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
                                                                 </svg>
@@ -733,6 +793,7 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                
                                             </tbody>
                                           </table>
                                     </div>
